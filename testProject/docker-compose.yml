@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: "postgres"
+    ports:
+      - "9111:5432"
+    container_name: db
+    environment:
+      POSTGRES_DB: 'callCenter'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'password'
